@@ -1,0 +1,92 @@
+/* src/LoadingScreen.css */
+
+/* Existing cursor styles */
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background: #fff;
+  margin-left: 2px;
+  animation: blink 1s step-start infinite;
+}
+  
+@keyframes blink {
+  50% { opacity: 0; }
+}  
+  
+.wait-msg {
+  color: #41d246; /* green text for wait messages */
+}  
+
+/* New top progress bar styling - to match Image 2 */
+.top-progress-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-progress-track {
+  width: 80%;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.top-progress-fill {
+  height: 100%;
+  background: #4cb5ff; /* Light blue color as in Image 2 */
+  border-radius: 15px;
+  position: relative;
+  transition: width 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.brain-progress-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.progress-percentage {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Original progress bar styles*/
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+  
+.progress-icon {
+  width: 24px;
+  height: 24px;
+}
+  
+.progress-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+  
+.progress-fill {
+  height: 100%;
+  background: #41d246;
+  transition: width 0.3s ease;
+}
