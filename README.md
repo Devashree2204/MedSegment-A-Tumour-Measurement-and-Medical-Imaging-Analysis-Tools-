@@ -60,7 +60,7 @@ This application was created as part of my MSc dissertation titled
 💾 Principal Marker: Dr. Artur Boronat
 
 ## 🎥 Live Demo
-📽️ [Click here to watch the video demo on Google Drive](https://drive.google.com/file/d/1AbCDefGhIJkLMnoPQRsTuVWXYZ/view?usp=sharing)
+📽️ [Click here to watch the video demo on Google Drive](https://drive.google.com/file/d/15f58PFdYfbcHfZ2JTQmouW8-y9kXUn5h/view?usp=drive_link)
 This short video showcases tumour recognition, segmentation, metric analysis, and 3D visualization on the MedSegment platform.
 
 ## 📫 Contact
