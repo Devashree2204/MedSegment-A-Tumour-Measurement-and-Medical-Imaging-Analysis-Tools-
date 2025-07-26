@@ -1,23 +1,68 @@
-## Project title: *MedSegment-A Tumour measurement and Medical Imaging Analysis tools*
+# 🧠 MedSegment – A Tumour Measurement and Medical Imaging Analysis Tool
 
-### Project description: 
-*MedSegment is a web-based application that uses deep learning to detect and analyze brain tumours from MRI scans. Users can upload T1-weighted NIfTI files to identify tumour presence, view segmentation overlays, calculate key tumour metrics (like area, volume, and sphericity), explore a 3D tumour model, and download results as a report. Built with React, Flask, and PostgreSQL, the tool offers a seamless interface for both clinical and research use.*
+## 📄 Project Description
+**MedSegment** is a full-stack web application that uses deep learning to detect, segment, and analyze brain tumours from MRI scans. Developed as part of my MSc dissertation at the University of Leicester, it combines AI-driven analysis with an intuitive user interface for medical professionals and researchers.
 
-### List of requirements : 
+🧪 Key capabilities include:
+- 📤 Uploading **T1-weighted NIfTI** brain MRIs
+- 🧠 Tumour detection using a CNN (EfficientNet-B0)
+- ✂️ Tumour segmentation via Attention U-Net
+- 📐 Tumour metrics: **2D area**, **3D volume**, **surface area**, **sphericity**, and **SAVR**
+- 🌀 3D tumour visualization with interactive controls
+- 📄 Downloadable reports in **PDF** and **HTML**
 
-Essential:
+-  ✅ Technologies: React · Flask · PyTorch · PostgreSQL
 
-- Data pre-processing and identification of the tumour to ensure that the images are cleaned.
-- Detecting if given MRI file has presence of tumour or not.
-- Segmenting the tumour if detected     
-- Computing 2D tumour area from the segmented images
-- Calculating 3D volume also from the segmented images 
-- Supporting standard MRI files format like NIfTI. 
-- Analysis results can be exported in various formats like (HTML and PDF)
+-  ## 🔧 Key Features
 
-Desirable:
+### ✅ Core Features
+- 🧹 MRI preprocessing (e.g. skull stripping, normalization)
+- 🧠 Tumour presence classification (Tumour vs Non-Tumour)
+- ✂️ Tumour segmentation mask generation
+- 📏 Metric calculations:
+  - 2D area (per slice)
+  - 3D tumour volume
+  - Surface area
+  - Surface-to-volume ratio
+  - Sphericity (roundness)
+- 📁 Support for **NIfTI (.nii.gz)** formats
+- 📄 Report download in PDF/HTML
 
-- Surface area to volume ratio as it helps understand how compact or spread out the tumour is. 
-- Measuring roundness as it provides insights into the tumour's shape to understand the growth . 
-- Interactive 3D viewer for tumour (rotate, zoom etc.) to enhance the visual aspect.
-- Adjusting visual parameters like contrast, brightness etc., so that image interpretation can be enhanced. 
+### 🌟 Additional Features
+- 🌀 Interactive 3D tumour viewer (rotate, zoom, pan)
+- 🌈 Brightness and contrast adjustment
+- 🔐 User authentication and file history tracking
+
+
+## 🛠️ Technologies Used
+
+| Category              | Tools / Libraries                                              |
+|-----------------------|---------------------------------------------------------------|
+| **Frontend**          | React, CSS, @google/model-viewer, React Router DOM           |
+| **Backend**           | Flask (Python), TorchScript, Postman (API Testing)           |
+| **ML Frameworks**     | PyTorch, EfficientNet-B0, Attention U-Net                    |
+| **Image Processing**  | NiBabel, Pillow, scikit-image                                |
+| **3D Visualization**  | Trimesh                                                      |
+| **Database**          | PostgreSQL                                                   |
+| **Cloud**             | AWS EC2 GPU (g4dn.xlarge)                                    |
+
+
+## 📊 Project Highlights
+-🧠 Developed & trained tumour detection and segmentation models from scratch
+-📈 Achieved 95%+ Dice Score using Attention U-Net
+-🧪 Compared model performance across datasets and modalities
+-🏆 Awarded Distinction & Prize Certificate at the University of Leicester
+
+## 🎓 About This Project
+This application was created as part of my MSc dissertation titled
+**MedSegment – A Tumour Measurement and Medical Imaging Analysis Tool** at the University of Leicester.
+👩‍🏫 Supervised by: Dr. Zedong Zheng
+💾 Principal Marker: Dr. Artur Boronat
+
+## 🎥 Live Demo
+📽️ [Click here to watch the video demo on Google Drive](https://drive.google.com/file/d/1AbCDefGhIJkLMnoPQRsTuVWXYZ/view?usp=sharing)
+This short video showcases tumour recognition, segmentation, metric analysis, and 3D visualization on the MedSegment platform.
+
+## 📫 Contact
+### Devshree Manish Deshmukh
+### 📧 devshree2201@gmail.com
